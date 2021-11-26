@@ -39,7 +39,7 @@ article {
   font-size: 3rem;
 }
 /* -------------------------------------------------------------------buttons------------------------------------------------------- */
-#buttons {
+.buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
