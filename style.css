@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  background: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main {
+  margin: 3rem;
+}
+header {
+  margin-top: 8rem;
+}
+h1 {
+  font-size: 2.3rem;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1.2rem;
+}
+p {
+  font-size: 1.125rem;
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 2rem;
+}
+article {
+  max-width: 750px;
+  margin: 5rem auto;
+}
+#intro {
+  margin-bottom: 8rem;
+}
+#intro h1 {
+  font-size: 3rem;
+}
+/* -------------------------------------------------------------------buttons------------------------------------------------------- */
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.ios {
+  background: hsl(171, 66%, 44%);
+  border-bottom: 3px solid hsl(171, 61%, 34%);
+  box-shadow: 0 4px 8px 0 hsl(171, 18%, 55%);
+}
+.ios:hover {
+  background: hsl(171, 66%, 54%);
+}
+.mac {
+  background: hsl(233, 100%, 69%);
+  border-bottom: 3px solid hsl(233, 46%, 55%);
+  box-shadow: 0 4px 8px 0 hsl(233, 47%, 66%);
+}
+.mac:hover {
+  background: hsl(233, 100%, 79%);
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 0 10rem -3rem;
+}
+#feaimg {
+  overflow: hidden;
+  max-width: 100%;
+}
+#feaimg img {
+  float: right;
+  width: 105%;
+}
+#featext {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 7rem;
+  text-align: left;
+}
+.feachild {
+  max-width: 380px;
+}
+.feachild h2 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 0.8rem;
+}
+#device-img img {
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+#tools {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: 5rem auto;
+  flex-wrap: wrap;
+}
+#tools .tool {
+  max-width: 23rem;
+}
+.tool img {
+  margin-bottom: 1.5rem;
+  width: 2.5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.tool h2 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+}
+.tool p {
+  line-height: 1.8;
+}
+#companies {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem auto 10rem auto;
+  max-width: 80rem;
+  cursor: pointer;
+}
+/* -----------------------------------------------------------------footer------------------------------------------------- */
+footer {
+  background: hsla(171, 28%, 67%, 0.103);
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+footer #main-footer {
+  display: grid;
+  align-items: center;
+  padding: 2rem;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+#main-footer > .logo > img {
+  max-width: 4rem;
+}
+#main-footer #foot-links {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 160px);
+  justify-items: left;
+}
+#foot-links .a {
+  order: 1;
+}
+#foot-links .b {
+  order: 4;
+}
+#foot-links .c {
+  order: 2;
+}
+#foot-links .d {
+  order: 5;
+}
+#foot-links .e {
+  order: 3;
+}
+#main-footer #foot-links a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#main-footer #media-icon i {
+  color: hsl(210, 10%, 33%);
+  font-size: 1.5rem;
+  margin: auto 0.5rem;
+  cursor: pointer;
+}
+.attribution a {
+  text-decoration: none;
+}
+#main-footer #foot-links a:hover,
+#main-footer #media-icon i:hover,
+.attribution a:hover {
+  color: hsl(171, 66%, 44%);
+}
+/* --------------------------------------------------queries-------------------------------------------------------------- */
+@media (max-width: 701px) {
+  #features {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+  #feaimg img {
+    width: 100%;
+  }
+  #featext {
+    margin-top: 5rem;
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 426px) {
+  body {
+    background: url(./images/bg-header-mobile.png) contain no-repeat;
+  }
+  main {
+    margin: 2rem;
+  }
+  #intro h1 {
+    font-size: 2.3rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  #buttons {
+    flex-direction: column;
+  }
+  #companies {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer #main-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #main-footer #foot-links {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  #foot-links .b {
+    order: 2;
+  }
+  #foot-links .e {
+    order: 5;
+  }
+  #main-footer #media-icon i {
+    margin: auto 1rem;
+  }
+}
