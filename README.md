@@ -8,7 +8,7 @@ Hello! Thanks for cheking out this repository.
 
 ## What is it about
 
-It's a solution of a newbie challange called "Clipboard Landing Page" made by Frontend Mentor.
+It's a solution of a junior challange called "Clipboard Landing Page" made by Frontend Mentor.
 
 Here is the link of the challange-
 https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9
