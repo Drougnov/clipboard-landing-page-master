@@ -14,7 +14,7 @@ Here is the link of the challange-
 https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9
 
 Here is the solution site url-
-https://drougnov.github.io/clipboard-landing-page-main/
+https://drougnov.github.io/clipboard-landing-page-master/
 
 ## Built with
 
